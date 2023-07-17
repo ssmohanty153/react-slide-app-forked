@@ -7,6 +7,7 @@ import { createContext } from "react";
 import UseMemoHooks from "./allHooks/UseMemoHooks";
 import UseCallbackHooks from "./allHooks/useCallbackHookFs/UseCallbackHooks";
 import TodoList from "./Todolist/TodoList";
+import UseReducerHooks from "./allHooks/UseReducerHooks";
 
 const url = "https://dummyjson.com/products";
 
@@ -46,8 +47,10 @@ export default function App() {
       {/*
       <UseMemoHooks />
        <UseCallbackHooks />
+        <TodoList />
        */}
-      <TodoList />
+
+      <UseReducerHooks />
     </div>
   );
 }
