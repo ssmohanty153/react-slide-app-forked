@@ -28,7 +28,9 @@ export default function UseReducerHooks() {
     <div>
       {count}
       <button onClick={() => dispatch("increment")}>Increment</button>
-      <button onClick={() => dispatch("decrement")}>Decrement</button>
+      <button onClick={() => dispatch("decrement")} disabled={count === 0}>
+        Decrement
+      </button>
     </div>
   );
 }
